@@ -16,14 +16,14 @@ object Transaction{
             tid:Int,
             price:Double,
             sell:Boolean,
-            amout:Double
+            amount:Double
            ) = new Transaction(
     timestamp=timestamp,
     date = Date.valueOf(timestamp.toInstant.atOffset(ZoneOffset.UTC).toLocalDate),
     tid=tid,
     price=price,
     sell = sell,
-    amount = amout
+    amount = amount
   )
 
 }
